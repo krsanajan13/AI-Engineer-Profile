@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K R Sanjana — AI/ML Engineer Portfolio</title>
-    <meta name="description" content="AI/ML Engineer specializing in Deep Learning & Data Science. Building production-ready, data-driven AI solutions. View my projects, skills, and experience." />
+    <meta name="description"
+        content="AI/ML Engineer specializing in Deep Learning & Data Science. Building production-ready, data-driven AI solutions. View my projects, skills, and experience." />
 
     <!-- LinkedIn / Open Graph -->
     <meta property="og:title" content="K R Sanjana — AI/ML Engineer Portfolio" />
-    <meta property="og:description" content="AI/ML Engineer specializing in Deep Learning & Data Science. View my projects, skills, and experience." />
+    <meta property="og:description"
+        content="AI/ML Engineer specializing in Deep Learning & Data Science. View my projects, skills, and experience." />
     <meta property="og:image" content="photo3.jpeg" />
     <meta property="og:type" content="website" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
 
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <style>
         /* ===== CSS RESET & ROOT ===== */
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -70,9 +77,18 @@
         }
 
         /* ===== SCROLLBAR ===== */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--bg-primary); }
-        ::-webkit-scrollbar-thumb { background: var(--accent-cyan); border-radius: 4px; }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-cyan);
+            border-radius: 4px;
+        }
 
         /* ===== UTILITY ===== */
         .container {
@@ -123,6 +139,7 @@
             transform: translateY(40px);
             transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
@@ -229,9 +246,17 @@
             border-radius: 2px;
         }
 
-        .nav-hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-        .nav-hamburger.open span:nth-child(2) { opacity: 0; }
-        .nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+        .nav-hamburger.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .nav-hamburger.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-hamburger.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
 
         /* ===== HERO ===== */
         .hero {
@@ -258,16 +283,21 @@
             position: absolute;
             inset: 0;
             background-image:
-                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
             background-size: 60px 60px;
             z-index: 0;
             animation: meshDrift 20s linear infinite;
         }
 
         @keyframes meshDrift {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(60px, 60px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(60px, 60px);
+            }
         }
 
         /* Floating orbs */
@@ -279,29 +309,48 @@
             animation: orbFloat 8s ease-in-out infinite;
             z-index: 0;
         }
+
         .hero-orb:nth-child(1) {
-            width: 300px; height: 300px;
+            width: 300px;
+            height: 300px;
             background: var(--accent-cyan);
-            top: 10%; left: 5%;
+            top: 10%;
+            left: 5%;
             animation-delay: 0s;
         }
+
         .hero-orb:nth-child(2) {
-            width: 250px; height: 250px;
+            width: 250px;
+            height: 250px;
             background: var(--accent-purple);
-            top: 60%; right: 10%;
+            top: 60%;
+            right: 10%;
             animation-delay: -3s;
         }
+
         .hero-orb:nth-child(3) {
-            width: 200px; height: 200px;
+            width: 200px;
+            height: 200px;
             background: var(--accent-amber);
-            bottom: 15%; left: 40%;
+            bottom: 15%;
+            left: 40%;
             animation-delay: -5s;
         }
 
         @keyframes orbFloat {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(30px, -20px) scale(1.05); }
-            66% { transform: translate(-20px, 20px) scale(0.95); }
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(30px, -20px) scale(1.05);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) scale(0.95);
+            }
         }
 
         .hero .container {
@@ -337,15 +386,25 @@
         }
 
         .hero-status .dot {
-            width: 8px; height: 8px;
+            width: 8px;
+            height: 8px;
             background: var(--accent-emerald);
             border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.3); }
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.3);
+            }
         }
 
         .hero-title {
@@ -367,8 +426,15 @@
         }
 
         @keyframes gradientShift {
-            0%, 100% { background-position: 0% center; }
-            50% { background-position: 100% center; }
+
+            0%,
+            100% {
+                background-position: 0% center;
+            }
+
+            50% {
+                background-position: 100% center;
+            }
         }
 
         .hero-subtitle {
@@ -473,8 +539,15 @@
         }
 
         @keyframes photoGlow {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
+
+            0%,
+            100% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
         }
 
         .hero-photo img {
@@ -622,12 +695,35 @@
             font-size: 1.1rem;
         }
 
-        .skill-group-icon.lang { background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan); }
-        .skill-group-icon.ml { background: rgba(139, 92, 246, 0.15); color: var(--accent-purple); }
-        .skill-group-icon.nlp { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); }
-        .skill-group-icon.data { background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); }
-        .skill-group-icon.tools { background: rgba(244, 63, 94, 0.15); color: var(--accent-rose); }
-        .skill-group-icon.db { background: rgba(99, 102, 241, 0.15); color: #818cf8; }
+        .skill-group-icon.lang {
+            background: rgba(6, 182, 212, 0.15);
+            color: var(--accent-cyan);
+        }
+
+        .skill-group-icon.ml {
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--accent-purple);
+        }
+
+        .skill-group-icon.nlp {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-amber);
+        }
+
+        .skill-group-icon.data {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-emerald);
+        }
+
+        .skill-group-icon.tools {
+            background: rgba(244, 63, 94, 0.15);
+            color: var(--accent-rose);
+        }
+
+        .skill-group-icon.db {
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
+        }
 
         .skill-group-title {
             font-family: var(--font-heading);
@@ -1203,7 +1299,8 @@
         }
 
         .contact-badge .dot {
-            width: 8px; height: 8px;
+            width: 8px;
+            height: 8px;
             background: var(--accent-emerald);
             border-radius: 50%;
             animation: pulse 2s ease-in-out infinite;
@@ -1267,26 +1364,33 @@
                 flex-direction: column-reverse;
                 text-align: center;
             }
+
             .hero-subtitle {
                 margin-left: auto;
                 margin-right: auto;
             }
+
             .hero-buttons {
                 justify-content: center;
             }
+
             .hero-social {
                 justify-content: center;
             }
+
             .hero-photo {
                 width: 220px;
                 height: 220px;
             }
+
             .stats-strip {
                 grid-template-columns: repeat(2, 1fr);
             }
+
             .about-grid {
                 grid-template-columns: 1fr;
             }
+
             .skills-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -1308,40 +1412,51 @@
                 transition: right 0.3s ease;
                 border-left: 1px solid var(--border-glass);
             }
+
             .nav-links.open {
                 right: 0;
             }
+
             .nav-links a {
                 padding: 12px 16px;
                 font-size: 1rem;
             }
+
             .nav-hamburger {
                 display: flex;
             }
+
             .section {
                 padding: 70px 0;
             }
+
             .stats-strip {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 12px;
             }
+
             .skills-grid {
                 grid-template-columns: 1fr;
             }
+
             .projects-grid {
                 grid-template-columns: 1fr;
             }
+
             .timeline {
                 padding-left: 30px;
             }
+
             .timeline-dot {
                 left: -24px;
                 width: 12px;
                 height: 12px;
             }
+
             .timeline::before {
                 left: 10px;
             }
+
             .education-meta {
                 gap: 20px;
             }
@@ -1351,21 +1466,26 @@
             .container {
                 padding: 0 16px;
             }
+
             .hero-title {
                 font-size: 2rem;
             }
+
             .hero-photo {
                 width: 180px;
                 height: 180px;
             }
+
             .hero-buttons {
                 flex-direction: column;
                 align-items: center;
             }
+
             .btn {
                 width: 100%;
                 justify-content: center;
             }
+
             .contact-links {
                 flex-direction: column;
                 align-items: center;
@@ -1373,6 +1493,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- ===== NAVBAR ===== -->
@@ -1387,7 +1508,8 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="KR_Sanjana_Resume (1).pdf" download class="nav-cta"><i class="fas fa-download"></i> Resume</a></li>
+                <li><a href="KR_Sanjana_Resume (1).pdf" download class="nav-cta"><i class="fas fa-download"></i>
+                        Resume</a></li>
             </ul>
             <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu">
                 <span></span>
@@ -1416,7 +1538,8 @@
                     Hi, I'm <span class="gradient-text">K R Sanjana</span>
                 </h1>
                 <p class="hero-subtitle">
-                    AI/ML Engineer building production-ready, data-driven intelligent systems — from deep learning models and analytics pipelines to automated AI workflows.
+                    AI/ML Engineer building production-ready, data-driven intelligent systems — from deep learning
+                    models and analytics pipelines to automated AI workflows.
                 </p>
 
                 <div class="hero-buttons">
@@ -1432,10 +1555,15 @@
                 </div>
 
                 <div class="hero-social">
-                    <a href="https://www.linkedin.com/in/k-r-sanjana-3a0413255/" target="_blank" rel="noopener noreferrer" title="LinkedIn" id="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/krsanajan13" target="_blank" rel="noopener noreferrer" title="GitHub" id="social-github"><i class="fab fa-github"></i></a>
-                    <a href="https://www.hackerrank.com/profile/hkrsanjanaec" target="_blank" rel="noopener noreferrer" title="HackerRank" id="social-hackerrank"><i class="fab fa-hackerrank"></i></a>
-                    <a href="mailto:krsanjana13@gmail.com" title="Email" id="social-email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/k-r-sanjana-3a0413255/" target="_blank"
+                        rel="noopener noreferrer" title="LinkedIn" id="social-linkedin"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/krsanajan13" target="_blank" rel="noopener noreferrer" title="GitHub"
+                        id="social-github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.hackerrank.com/profile/hkrsanjanaec" target="_blank" rel="noopener noreferrer"
+                        title="HackerRank" id="social-hackerrank"><i class="fab fa-hackerrank"></i></a>
+                    <a href="mailto:krsanjana13@gmail.com" title="Email" id="social-email"><i
+                            class="fas fa-envelope"></i></a>
                 </div>
             </div>
 
@@ -1479,13 +1607,21 @@
             <div class="about-grid">
                 <div class="about-text reveal">
                     <p>
-                        I'm an AI/ML Engineer with hands-on experience building data-driven intelligent systems across internships and industry projects. My work spans from designing deep learning models and analytics pipelines to automating end-to-end AI workflows using tools like TensorFlow, scikit-learn, and n8n.
+                        I'm an AI/ML Engineer with hands-on experience building data-driven intelligent systems across
+                        internships and industry projects. My work spans from designing deep learning models and
+                        analytics pipelines to automating end-to-end AI workflows using tools like TensorFlow,
+                        scikit-learn, and n8n.
                     </p>
                     <p>
-                        Currently at <strong style="color: var(--accent-cyan);">Duroflex Pvt Ltd</strong>, I'm developing AI-driven call analysis systems, sales forecasting models, and Text-to-SQL modules that deliver actionable business insights. Previously at <strong style="color: var(--accent-purple);">NKB Playtech</strong>, I built detection pipelines that reduced manual annotation effort by ~40%.
+                        Currently at <strong style="color: var(--accent-cyan);">Duroflex Pvt Ltd</strong>, I'm
+                        developing AI-driven call analysis systems, sales forecasting models, and Text-to-SQL modules
+                        that deliver actionable business insights. Previously at <strong
+                            style="color: var(--accent-purple);">NKB Playtech</strong>, I built detection pipelines that
+                        reduced manual annotation effort by ~40%.
                     </p>
                     <p>
-                        With a B.E. in Electronics & Communication (CGPA: 9.31), I bring a strong analytical foundation and a passion for building scalable, production-ready AI solutions.
+                        With a B.E. in Electronics & Communication (CGPA: 9.31), I bring a strong analytical foundation
+                        and a passion for building scalable, production-ready AI solutions.
                     </p>
                 </div>
                 <div class="about-highlights reveal">
@@ -1520,7 +1656,8 @@
             <div class="section-header reveal">
                 <span class="section-label">Technical Skills</span>
                 <h2 class="section-title">Tools & Technologies I Work With</h2>
-                <p class="section-subtitle">A curated set of skills honed through internships, projects, and continuous learning.</p>
+                <p class="section-subtitle">A curated set of skills honed through internships, projects, and continuous
+                    learning.</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-group reveal">
@@ -1614,7 +1751,8 @@
             <div class="section-header reveal">
                 <span class="section-label">Experience</span>
                 <h2 class="section-title">Where I've Made an Impact</h2>
-                <p class="section-subtitle">Professional experience building real-world AI systems and data-driven solutions.</p>
+                <p class="section-subtitle">Professional experience building real-world AI systems and data-driven
+                    solutions.</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item reveal">
@@ -1628,10 +1766,14 @@
                             <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jan 2026 – Present</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li>Developing AI-driven <strong>call analysis systems</strong> using speech-to-text and NLP techniques to extract actionable insights from customer service interactions</li>
-                            <li>Building <strong>sales forecasting models</strong> for data-driven business planning and demand prediction</li>
-                            <li>Designing <strong>Text-to-SQL modules</strong> enabling natural language database querying for non-technical stakeholders</li>
-                            <li>Automating end-to-end AI workflows using <strong>n8n</strong>, integrating multiple services to streamline analytics pipelines</li>
+                            <li>Developing AI-driven <strong>call analysis systems</strong> using speech-to-text and NLP
+                                techniques to extract actionable insights from customer service interactions</li>
+                            <li>Building <strong>sales forecasting models</strong> for data-driven business planning and
+                                demand prediction</li>
+                            <li>Designing <strong>Text-to-SQL modules</strong> enabling natural language database
+                                querying for non-technical stakeholders</li>
+                            <li>Automating end-to-end AI workflows using <strong>n8n</strong>, integrating multiple
+                                services to streamline analytics pipelines</li>
                         </ul>
                     </div>
                 </div>
@@ -1647,9 +1789,13 @@
                             <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Oct 2025 – Jan 2026</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li>Developed SAM3-based AI pipeline for component detection from casino video frames, reducing manual annotation effort by <span class="metric">~40%</span></li>
-                            <li>Experimented with <span class="metric">5+ pretrained deep learning models</span> for component generation and swapping, improving accuracy by <span class="metric">15%</span></li>
-                            <li>Streamlined AI research workflows, accelerating model iteration cycles and enabling scalable component generation across video datasets</li>
+                            <li>Developed SAM3-based AI pipeline for component detection from casino video frames,
+                                reducing manual annotation effort by <span class="metric">~40%</span></li>
+                            <li>Experimented with <span class="metric">5+ pretrained deep learning models</span> for
+                                component generation and swapping, improving accuracy by <span class="metric">15%</span>
+                            </li>
+                            <li>Streamlined AI research workflows, accelerating model iteration cycles and enabling
+                                scalable component generation across video datasets</li>
                         </ul>
                     </div>
                 </div>
@@ -1674,13 +1820,17 @@
                         <span class="project-badge"><i class="fas fa-users"></i> Team Project</span>
                         <h3 class="project-title">AI Casino Pipeline</h3>
                         <p class="project-desc">
-                            <strong>Problem:</strong> Manual annotation of visual components from casino video feeds was time-intensive and unscalable.
+                            <strong>Problem:</strong> Manual annotation of visual components from casino video feeds was
+                            time-intensive and unscalable.
                         </p>
                         <p class="project-desc">
-                            <strong>Approach:</strong> Contributed to building an AI pipeline using SAM3 for automated component detection and extraction. Experimented with 5+ pretrained deep learning models to generate, modify, and swap visual components.
+                            <strong>Approach:</strong> Contributed to building an AI pipeline using SAM3 for automated
+                            component detection and extraction. Experimented with 5+ pretrained deep learning models to
+                            generate, modify, and swap visual components.
                         </p>
                         <div class="project-result">
-                            <i class="fas fa-chart-line"></i> 1000+ frames processed · ~40% annotation reduction · 15% accuracy gain
+                            <i class="fas fa-chart-line"></i> 1000+ frames processed · ~40% annotation reduction · 15%
+                            accuracy gain
                         </div>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
@@ -1698,10 +1848,13 @@
                         <span class="project-badge"><i class="fas fa-user"></i> Solo Project</span>
                         <h3 class="project-title">NIKE vs ADIDAS Logo Detection</h3>
                         <p class="project-desc">
-                            <strong>Problem:</strong> Automated classification of brand logos from images with high accuracy.
+                            <strong>Problem:</strong> Automated classification of brand logos from images with high
+                            accuracy.
                         </p>
                         <p class="project-desc">
-                            <strong>Approach:</strong> Built an end-to-end CNN-based image classification pipeline including data preprocessing, model design, training, evaluation, and augmentation to improve generalization.
+                            <strong>Approach:</strong> Built an end-to-end CNN-based image classification pipeline
+                            including data preprocessing, model design, training, evaluation, and augmentation to
+                            improve generalization.
                         </p>
                         <div class="project-result">
                             <i class="fas fa-bullseye"></i> 92%+ validation accuracy · End-to-end pipeline
@@ -1714,7 +1867,9 @@
                             <span class="project-tag">Transfer Learning</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/krsanajan13/Image-prediction-using-CNN" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a href="https://github.com/krsanajan13/Image-prediction-using-CNN" class="project-link"
+                                target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on
+                                GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -1726,10 +1881,13 @@
                         <span class="project-badge"><i class="fas fa-user"></i> Solo Project</span>
                         <h3 class="project-title">Duplicate Question Pairs Detection</h3>
                         <p class="project-desc">
-                            <strong>Problem:</strong> Identifying semantically duplicate questions in large unstructured text datasets.
+                            <strong>Problem:</strong> Identifying semantically duplicate questions in large unstructured
+                            text datasets.
                         </p>
                         <p class="project-desc">
-                            <strong>Approach:</strong> Engineered an NLP pipeline using text preprocessing, TF-IDF, and Word2Vec feature extraction. Trained and evaluated ensemble algorithms including Random Forest and XGBoost.
+                            <strong>Approach:</strong> Engineered an NLP pipeline using text preprocessing, TF-IDF, and
+                            Word2Vec feature extraction. Trained and evaluated ensemble algorithms including Random
+                            Forest and XGBoost.
                         </p>
                         <div class="project-result">
                             <i class="fas fa-trophy"></i> Random Forest F1-Score: 0.83
@@ -1742,7 +1900,9 @@
                             <span class="project-tag">NLP</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/krsanajan13/Duplicate-Question-Pairs-Project-using-NLP" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View on GitHub</a>
+                            <a href="https://github.com/krsanajan13/Duplicate-Question-Pairs-Project-using-NLP"
+                                class="project-link" target="_blank" rel="noopener noreferrer"><i
+                                    class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -1761,8 +1921,8 @@
             <div class="education-card reveal">
                 <div class="education-icon">🎓</div>
                 <h3 class="education-degree">Bachelor of Engineering</h3>
-                <p class="education-college">Electronics and Communication Engineering<br/>
-                Jawaharlal Nehru National College of Engineering, Shivamogga, Karnataka</p>
+                <p class="education-college">Electronics and Communication Engineering<br />
+                    Jawaharlal Nehru National College of Engineering, Shivamogga, Karnataka</p>
                 <div class="education-meta">
                     <div class="education-meta-item">
                         <div class="education-meta-value">9.31</div>
@@ -1797,7 +1957,8 @@
                     <div class="cert-info">
                         <h4>Python (Basic) Certified</h4>
                         <p>HackerRank — 2023</p>
-                        <a href="https://www.hackerrank.com/profile/hkrsanjanaec" target="_blank" rel="noopener noreferrer">View Certificate →</a>
+                        <a href="https://www.hackerrank.com/profile/hkrsanjanaec" target="_blank"
+                            rel="noopener noreferrer">View Certificate →</a>
                     </div>
                 </div>
             </div>
@@ -1820,7 +1981,10 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            I'm seeking full-time positions as an <strong>AI/ML Engineer</strong> or <strong>Data Scientist</strong>. I'm particularly interested in roles where I can build production-ready AI systems, work with deep learning and data analytics, and contribute to solving real business problems with AI.
+                            I'm seeking full-time positions as an <strong>AI/ML Engineer</strong> or <strong>Data
+                                Scientist</strong>. I'm particularly interested in roles where I can build
+                            production-ready AI systems, work with deep learning and data analytics, and contribute to
+                            solving real business problems with AI.
                         </div>
                     </div>
                 </div>
@@ -1832,7 +1996,10 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            My core stack includes <strong>Python</strong>, <strong>TensorFlow/Keras</strong>, <strong>scikit-learn</strong>, and <strong>SQL</strong> for ML and data work. For NLP, I work with NLTK, TF-IDF, and Word2Vec. I also use tools like Docker, n8n for workflow automation, and standard data libraries (NumPy, Pandas, Matplotlib, Seaborn).
+                            My core stack includes <strong>Python</strong>, <strong>TensorFlow/Keras</strong>,
+                            <strong>scikit-learn</strong>, and <strong>SQL</strong> for ML and data work. For NLP, I
+                            work with NLTK, TF-IDF, and Word2Vec. I also use tools like Docker, n8n for workflow
+                            automation, and standard data libraries (NumPy, Pandas, Matplotlib, Seaborn).
                         </div>
                     </div>
                 </div>
@@ -1844,7 +2011,8 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            Yes, I am currently based in Bengaluru and open to relocation for the right opportunity. I'm also open to remote and hybrid work arrangements.
+                            Yes, I am currently based in Bengaluru and open to relocation for the right opportunity. I'm
+                            also open to remote and hybrid work arrangements.
                         </div>
                     </div>
                 </div>
@@ -1856,7 +2024,10 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            Yes. At <strong>Duroflex</strong>, I'm building AI systems that are integrated into business operations — including call analysis workflows, sales forecasting models, and Text-to-SQL modules used by internal teams. At <strong>NKB Playtech</strong>, I built detection pipelines processing 1000+ video frames for a production AI system.
+                            Yes. At <strong>Duroflex</strong>, I'm building AI systems that are integrated into business
+                            operations — including call analysis workflows, sales forecasting models, and Text-to-SQL
+                            modules used by internal teams. At <strong>NKB Playtech</strong>, I built detection
+                            pipelines processing 1000+ video frames for a production AI system.
                         </div>
                     </div>
                 </div>
@@ -1868,7 +2039,9 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-inner">
-                            I am currently interning and can discuss availability and start dates for the right full-time opportunity. Please feel free to reach out via email or LinkedIn to discuss further.
+                            I am currently interning and can discuss availability and start dates for the right
+                            full-time opportunity. Please feel free to reach out via email or LinkedIn to discuss
+                            further.
                         </div>
                     </div>
                 </div>
@@ -1883,20 +2056,24 @@
                 <span class="section-label">Get in Touch</span>
                 <h2 class="contact-tagline">Let's Build Something Impactful Together</h2>
                 <p class="contact-subtitle">
-                    I'm always open to discussing AI/ML opportunities, collaborations, and interesting projects. Let's connect!
+                    I'm always open to discussing AI/ML opportunities, collaborations, and interesting projects. Let's
+                    connect!
                 </p>
 
                 <div class="contact-links">
                     <a href="mailto:krsanjana13@gmail.com" class="contact-link" id="contact-email">
                         <i class="fas fa-envelope"></i> krsanjana13@gmail.com
                     </a>
-                    <a href="https://www.linkedin.com/in/k-r-sanjana-3a0413255/" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-linkedin">
+                    <a href="https://www.linkedin.com/in/k-r-sanjana-3a0413255/" target="_blank"
+                        rel="noopener noreferrer" class="contact-link" id="contact-linkedin">
                         <i class="fab fa-linkedin-in"></i> LinkedIn
                     </a>
-                    <a href="https://github.com/krsanajan13" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-github">
+                    <a href="https://github.com/krsanajan13" target="_blank" rel="noopener noreferrer"
+                        class="contact-link" id="contact-github">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="https://www.hackerrank.com/profile/hkrsanjanaec" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-hackerrank">
+                    <a href="https://www.hackerrank.com/profile/hkrsanjanaec" target="_blank" rel="noopener noreferrer"
+                        class="contact-link" id="contact-hackerrank">
                         <i class="fab fa-hackerrank"></i> HackerRank
                     </a>
                 </div>
@@ -2083,7 +2260,7 @@
 
         // === Smooth scroll for all anchor links ===
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -2093,4 +2270,5 @@
         });
     </script>
 </body>
+
 </html>
